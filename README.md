@@ -46,39 +46,39 @@ All the translations for this repo will be listed below:
 
 ## Table of Contents
 
-1. **[Call Stack](#1-call-stack)**
-2. **[Primitive Types](#2-primitive-types)**
-3. **[Value Types and Reference Types](#3-value-types-and-reference-types)**
-4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)**
-5. **[== vs === vs typeof](#5--vs--vs-typeof)**
-6. **[Function Scope, Block Scope and Lexical Scope](#6-function-scope-block-scope-and-lexical-scope)**
-7. **[Expression vs Statement](#7-expression-vs-statement)**
-8. **[IIFE, Modules and Namespaces](#8-iife-modules-and-namespaces)**
-9. **[Message Queue and Event Loop](#9-message-queue-and-event-loop)**
-10. **[setTimeout, setInterval and requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)**
-11. **[JavaScript Engines](#11-javascript-engines)**
-12. **[Bitwise Operators, Type Arrays and Array Buffers](#12-bitwise-operators-type-arrays-and-array-buffers)**
-13. **[DOM and Layout Trees](#13-dom-and-layout-trees)**
-14. **[Factories and Classes](#14-factories-and-classes)**
-15. **[this, call, apply and bind](#15-this-call-apply-and-bind)**
-16. **[new, Constructor, instanceof and Instances](#16-new-constructor-instanceof-and-instances)**
-17. **[Prototype Inheritance and Prototype Chain](#17-prototype-inheritance-and-prototype-chain)**
-18. **[Object.create and Object.assign](#18-objectcreate-and-objectassign)**
-19. **[map, reduce, filter](#19-map-reduce-filter)**
-20. **[Pure Functions, Side Effects and State Mutation](#20-pure-functions-side-effects-and-state-mutation)**
-21. **[Closures](#21-closures)**
-22. **[High Order Functions](#22-high-order-functions)**
-23. **[Recursion](#23-recursion)**
-24. **[Collections and Generators](#24-collections-and-generators)**
-25. **[Promises](#25-promises)**
+1. **[Call Stack](#1-call-stack)** - Knowing about the call stack and event loop can help you understand how events, timeouts and the browser API works. 
+2. **[Primitive Types](#2-primitive-types)** - Primitive types are the building blocks of programming languages so I think this is necessary. Javascript isn't usually used for math intensive apps so I don't think it's necessary to know a lot of details about numbers for general use apps. 
+3. **[Value Types and Reference Types](#3-value-types-and-reference-types)** - You should understand how passing by value vs passing by reference works or else you'll get strange bugs when dealing with objects. 
+4. **[Implicit, Explicit, Nominal, Structuring and Duck Typing](#4-implicit-explicit-nominal-structuring-and-duck-typing)** - You should at least know the basics for this, ex. when strings get converted to numbers or when strings/numbers get converted to booleans. The more complicated stuff is usually asked in coding interviews.
+5. **[== vs === vs typeof](#5--vs--vs-typeof)** - Simple concept, absolutely needed
+6. **[Function Scope, Block Scope and Lexical Scope](#6-function-scope-block-scope-and-lexical-scope)** - You should know about functions but it's more important to know how to use them, and not what each thing is called.
+7. **[Expression vs Statement](#7-expression-vs-statement)** - Complicated concepts. The best way to understand these is going through a lot of examples. I think it's not necessary for a beginner to know all of these in detail. 
+8. **[IIFE, Modules and Namespaces](#8-iife-modules-and-namespaces)** - Modern javascript is all about Modules. But you should be able to recognize an iife in case you see one. 
+9. **[Message Queue and Event Loop](#9-message-queue-and-event-loop)** - This goes hand in hand with the callstack
+10. **[setTimeout, setInterval and requestAnimationFrame](#10-settimeout-setinterval-and-requestanimationframe)** - setTimeout and setInterval are used all the time. I've never had to use requestAnimationFrame because we usually use libraries for animations. So unless you plan on doing specialised animation work I don't think it's necessary.
+11. **[JavaScript Engines](#11-javascript-engines)** - This is way too specialised, I've never come across these
+12. **[Bitwise Operators, Type Arrays and Array Buffers](#12-bitwise-operators-type-arrays-and-array-buffers)** - I've only seen bitwise operators used in competitive programming, I've never seen these used in everyday programming. 
+13. **[DOM and Layout Trees](#13-dom-and-layout-trees)** - You should know what the DOM is, how to traverse it etc but it's hard to memorize all of the functions needed. You should maybe go over all of them briefly and keep a cheatsheet somewhere. Nowadays DOM manipulation is usually handled by frameworks but you should know at least how to do it in vanilla JS. Some companies also use jquery.
+14. **[Factories and Classes](#14-factories-and-classes)** - Many modern frameworks use classes so you should know how to use them. But you can also use a purely functional style. 
+15. **[this, call, apply and bind](#15-this-call-apply-and-bind)** - You have to know what this is in each context, especially regular functions vs arrow functions. I've rarely used (and seen) call, apply and bind (maybe that's just me though), but it's a really popular interview question. 
+16. **[new, Constructor, instanceof and Instances](#16-new-constructor-instanceof-and-instances)** - You should know about these if you're dealing with object oriented javascript.
+17. **[Prototype Inheritance and Prototype Chain](#17-prototype-inheritance-and-prototype-chain)** - Personally I don't know a lot of details about these. I think you can breeze by with only the basics. 
+18. **[Object.create and Object.assign](#18-objectcreate-and-objectassign)** - I've never used these
+19. **[map, reduce, filter](#19-map-reduce-filter)** - Map and filter are really useful. Reduce is a bit fancier. I don't see it used it much but it's handy if you know how to use it.
+20. **[Pure Functions, Side Effects and State Mutation](#20-pure-functions-side-effects-and-state-mutation)** - Not necessary to know all the theory but you should at least know what side effects are
+21. **[Closures](#21-closures)** - You should know the basics about these
+22. **[High Order Functions](#22-high-order-functions)** - Higher order functions are functions like map and filter, they return a function when executed, takes a function as one or more of its arguments, or both. So chances are you're already using Higher Order functions and you don't even know it
+23. **[Recursion](#23-recursion)** - Recursion is an interesting concept for programmers but I haven't seen it used in everyday apps. 
+24. **[Collections and Generators](#24-collections-and-generators)** - Haven't seen these used yet in everyday work. But there's a neat and easy trick you can do with sets. You can easily get the unique values in an array by converting it to a set `let uniqueItems = [...new Set(items)]`
+25. **[Promises](#25-promises)** - Promises and async/await are really useful. Personally the explanations with analogies confuse me, I understood these better with real examples. 
 26. **[async/await](#26-asyncawait)**
-27. **[Data Structures](#27-data-structures)**
-28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)**
-29. **[Algorithms](#29-algorithms)**
-30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)**
-31. **[Design Patterns](#31-design-patterns)**
-32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)**
-33. **[Clean Code](#33-clean-code)**
+27. **[Data Structures](#27-data-structures)** - Objects and arrays are a must. I've never used the other ones for work. They're probably useful if you work with network apps.
+28. **[Expensive Operation and Big O Notation](#28-expensive-operation-and-big-o-notation)** - These are mostly used in interviews. But you should at least know to avoid expensive operations if possible, for instance nested loops. 
+29. **[Algorithms](#29-algorithms)** - These are interesting but there are libraries for this stuff. 
+30. **[Inheritance, Polymorphism and Code Reuse](#30-inheritance-polymorphism-and-code-reuse)** - You'll come across these if you deal with object-oriented javascript
+31. **[Design Patterns](#31-design-patterns)** - I'm guilty of not knowing much about these, but I've probably used some without knowing what they're called
+32. **[Partial Applications, Currying, Compose and Pipe](#32-partial-applications-currying-compose-and-pipe)** - Advanced stuff
+33. **[Clean Code](#33-clean-code)** - After you pass the beginner phase you should aim to make your code clean
 
 
 ---
